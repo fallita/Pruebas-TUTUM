@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="https://test.paxfacturacion.com.mx:453/webservices/wcfRecepcionASMX.asmx?wsdl" uri="wsdl/test.paxfacturacion.com.mx_453/webservices/wcfRecepcionASMX.asmx.wsdl"/>
+</catalog>

@@ -1,0 +1,4 @@
+mx\com\kaizentec\apiUtils\utilerias\CORSFilter.class
+mx\com\kaizentec\apiUtils\daos\produccion\DaoAlumno.class
+mx\com\kaizentec\apiUtils\utilerias\Conexion.class
+mx\com\kaizentec\apiUtils\servlets\desarrolloIngenieria\imprimirFichaTecnica.class

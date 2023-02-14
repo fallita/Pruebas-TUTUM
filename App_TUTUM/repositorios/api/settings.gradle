@@ -1,0 +1,11 @@
+rootProject.name = 'api'
+
+include ":core"
+project(":core").projectDir = file("../core")
+
+
+//include ":core-generico"
+//project(":core-generico").projectDir = file("../core-generico")
+//
+
+

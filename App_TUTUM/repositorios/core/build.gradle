@@ -1,0 +1,18 @@
+apply plugin: 'java'
+
+group = 'mx.com.kaizentec'
+version = '0.0.1'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {    
+//    compile fileTree(include: ['*.jar'], dir: 'libs')   
+    compile 'com.auth0:java-jwt:3.4.1'
+
+    compile group: 'javax.mail', name: 'mail', version: '1.4.1'
+
+    compile files('../dao/target/Dao-0.0.1.jar')
+}
