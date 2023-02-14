@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 10/02/2023 01:06:04 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="mx.com.kaizentec.erp.cadAnd.entidades.alumnos.TCalificaciones" table="t_calificaciones" catalog="escuela" optimistic-lock="version">
+        <id name="idTCalificaciones" type="java.lang.Integer">
+            <column name="id_t_calificaciones" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="TAlumnos" class="mx.com.kaizentec.erp.cadAnd.entidades.alumnos.TAlumnos" fetch="select">
+            <column name="id_t_usuarios" not-null="true" />
+        </many-to-one>
+        <many-to-one name="TMaterias" class="mx.com.kaizentec.erp.cadAnd.entidades.alumnos.TMaterias" fetch="select">
+            <column name="id_t_materias" not-null="true" />
+        </many-to-one>
+        <property name="calificacion" type="big_decimal">
+            <column name="calificacion" precision="10" />
+        </property>
+        <property name="fechaRegistro" type="date">
+            <column name="fecha_registro" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
